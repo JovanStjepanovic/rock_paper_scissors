@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenuActivity"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/imageViewVersusBot"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+       android:layout_marginTop="40dp"
+         android:scaleType="centerCrop"
+        android:src="@drawable/bot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+       android:id="@+id/textViewBot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VS BOT"
+        android:layout_marginTop="20dp"
+        android:textColor="#E91E63"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewVersusBot"
+        app:layout_constraintStart_toStartOf="@+id/imageViewVersusBot"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewVersusBot" />
+
+
+    <ImageView
+        android:id="@+id/imageViewVersusPlayer"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/player"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBot" />
+
+
+    <TextView
+        android:id="@+id/textViewPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VS Player"
+        android:layout_marginTop="20dp"
+        android:textColor="#03A9F4"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewVersusPlayer"
+        app:layout_constraintStart_toStartOf="@+id/imageViewVersusPlayer"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewVersusPlayer" />
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
